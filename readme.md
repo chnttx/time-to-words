@@ -15,3 +15,18 @@ Write an function that converts time into the corresponding english words - eg. 
 - '2:40' > 'twenty to three'
 - '2:45' > 'quarter to three' 
 - '2:55' > 'five to three'
+<!-- - '12:35' > 'twenty five to one' -->
+
+## Hours 
+- midnight, midday
+
+## Minutes
+- minutes [15, 30, 45] 
+- minutes [1, 29]   : minute past hour
+- minutes [31, 59]  : (60-minute) to next hour
+
+## Implementation
+
+- split by ":"
+- handle midday + midnight
+- handle quarter times
